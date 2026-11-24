@@ -1,0 +1,21 @@
+import streamlit as st
+
+st.write("Above the columns")
+row1 = st.columns(3)
+row1[0].image("https://th.bing.com/th/id/R.33e0b7c8de5bd5c8406c63f3077256fa?rik=fXtigtvBZONFxw&pid=ImgRaw&r=0")
+row1[1].image("https://th.bing.com/th/id/R.4dfaee0044971e79100d38c987b8caef?rik=qVcMsx3Wnlm%2fiA&riu=http%3a%2f%2fwww.publicdomainpictures.net%2fpictures%2f190000%2fvelka%2fcrumpled-paper-1469886046qpU.jpg&ehk=gt12jb4DbALB4iqxMAte%2fQUxr67Phx%2fpcXn9pUYRQo4%3d&risl=&pid=ImgRaw&r=0")
+row1[2].image("https://tse3.mm.bing.net/th/id/OIP.-o3BD_Mmr48QNQbW3DQjUgHaHx?r=0&rs=1&pid=ImgDetMain&o=7&rm=3")
+
+row2 = st.columns(3)
+if row2[0].button("Rock"):
+    st.write("Paper")
+    st.write("You lose!")
+    st.image("https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbjd3M2NpOGVsYWwycnlrdjQwcWxzajZ3eDB6MzE4eGRqZmRzejZjNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/vPNpO0nHZoWyWBX8b7/giphy.gif")
+if row2[1].button("Paper"):
+    st.write("Scissors")
+    st.write("You lose!")
+    st.image("https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbjd3M2NpOGVsYWwycnlrdjQwcWxzajZ3eDB6MzE4eGRqZmRzejZjNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/vPNpO0nHZoWyWBX8b7/giphy.gif")
+if row2[2].button("Scissors"):
+    st.write("Rock")
+    st.write("You lose!")
+    st.image("https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbjd3M2NpOGVsYWwycnlrdjQwcWxzajZ3eDB6MzE4eGRqZmRzejZjNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/vPNpO0nHZoWyWBX8b7/giphy.gif")
